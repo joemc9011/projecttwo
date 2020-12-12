@@ -1,0 +1,24 @@
+#title{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body {
+    background-image: url(baskethoop.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    max-width: auto;
+    max-height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:black;
+    display: block;
+}
