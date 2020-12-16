@@ -30,3 +30,7 @@ body {
 .card-body {
     background-color: rgb(53, 52, 52);
 }
+
+h6 {
+    color: white
+}
