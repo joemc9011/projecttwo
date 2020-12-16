@@ -1,0 +1,36 @@
+body {
+    background-image: url(woodback.png);
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000
+}
+
+.jumbotron {
+    background-color: rgb(177, 177, 177);
+    color: white;
+    border-style: solid;
+    border-color:black;
+    border-width: thick;
+    background-image: url(players.png);
+    background-position: center;
+    background-size: 100%;
+    box-shadow: 5px 5px 50px #0e0e0e
+    
+    ;
+
+
+}
+
+.card-header{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(48, 172, 172);
+    color: white;
+}
+
+.card-body {
+    background-color: rgb(53, 52, 52);
+}
+
+h6 {
+    color: white
+}

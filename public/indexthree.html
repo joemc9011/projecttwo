@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Players Portfolio</title>
+
+  <!-- Bootstrap CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="three.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1>Players List</h1>
+      <p>Selects Your Players & Build your Team....</p>
+      <hr>
+      <a href="/" class="btn btn-danger btn-lg">
+        <span class="fa fa-eye"></span> Search Players</a>
+      <a href="/add" class="btn btn-danger btn-lg">
+        <span class="fa fa-plus"></span> Add New Players</a>
+    
+
+    </div>
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Point Guard:
+          </div>
+          <div class="card-body">
+            <table class="table table-sm table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Current Team</th>
+                  <th scope="col">Points Last Season</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Goran Dragic</td>
+                  <td>Miami Heat</td>
+                  <td>953</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center">
+              <button class="btn btn-primary btn-md" id="search-btn">
+                <span class="fa fa-search"></span> Search</button>
+              <button class="btn btn-primary btn-md" id="pg-btn">
+                <span class="fa fa-search"></span> Add to team</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Shooting Guard:
+          </div>
+          <div class="card-body">
+            <table class="table table-sm table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Current Team</th>
+                  <th scope="col">Points Last Season</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Goran Dragic</td>
+                  <td>Miami Heat</td>
+                  <td>953</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center">
+              <button class="btn btn-primary btn-md" id="search-btn">
+                <span class="fa fa-search"></span> Search</button>
+              <button class="btn btn-primary btn-md" id="pg-btn">
+                <span class="fa fa-search"></span> Add to team</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Small Forward:
+          </div>
+          <div class="card-body">
+            <table class="table table-sm table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Current Team</th>
+                  <th scope="col">Points Last Season</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Goran Dragic</td>
+                  <td>Miami Heat</td>
+                  <td>953</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center">
+              <button class="btn btn-primary btn-md" id="search-btn">
+                <span class="fa fa-search"></span> Search</button>
+              <button class="btn btn-primary btn-md" id="pg-btn">
+                <span class="fa fa-search"></span> Add to team</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-header">
+            Power Forward:
+          </div>
+          <div class="card-body">
+            <table class="table table-sm table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Current Team</th>
+                  <th scope="col">Points Last Season</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Goran Dragic</td>
+                  <td>Miami Heat</td>
+                  <td>953</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center">
+              <button class="btn btn-primary btn-md" id="search-btn">
+                <span class="fa fa-search"></span> Search</button>
+              <button class="btn btn-primary btn-md" id="pg-btn">
+                <span class="fa fa-search"></span> Add to team</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Center:
+          </div>
+          <div class="card-body">
+            <table class="table table-sm table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Current Team</th>
+                  <th scope="col">Points Last Season</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Goran Dragic</td>
+                  <td>Miami Heat</td>
+                  <td>953</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center">
+              <button class="btn btn-primary btn-md" id="search-btn">
+                <span class="fa fa-search"></span> Search</button>
+              <button class="btn btn-primary btn-md" id="pg-btn">
+                <span class="fa fa-search"></span> Add to team</button>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Player's Search Results
+          </div>
+          <div class="card-body">
+            <div class="well" id="stats">
+              <h2 id="title"></h2>
+              <div>
+                <h6>
+                  <strong>Players:</strong>
+                  <span id="players"></span>
+                </h6>
+                <h6>
+                  <strong>Position:</strong>
+                  <span id="position"></span>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="/all" class="btn btn-danger btn-lg">
+    <span class="fa fa-th-list"></span>Your NBA Fantasy Team</a>
+
+  <!-- Custom Script -->
+  <script src="" type="text/javascript"></script>
+</body>
+
+</html>
