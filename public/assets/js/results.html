@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Assets/results.css">
+  <!-- <link rel="stylesheet" href="Assets/results.css"> -->
   <title> Hole in the Wall </title>
 </head>
 
@@ -35,7 +35,7 @@
     // var query = "restaurants";
     //  + "&key=" + APIKey;
 
-    var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=/336e712839ff463dab532b77803a63a9`
+    var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
     // console.log(queryURL);
     // console.log(crd);
     $.ajax({
@@ -45,21 +45,22 @@
       .then(function (response) {
         console.log(queryURL)
         console.log(response)
+        for (var i = 0; i < 450; i++) {
+              var firstName = response[i].FirstName;
+              var lastName = response[i].LastName;
+              // var post = response.results[i].rating
+              // var hours = response.results[i].opening_hours.open_now
+              $("#response2").append("<div>", "FirstName: " + firstName, "<div>", "lastName: " + lastName, "<hr>")
+
+              // if ((response.results[i].price_level < 4) && (response.results[i].rating > 4)) {
+              //   // console.log(response.results[i].price_level)
+              //   // console.log(response.results[i].name)
+              //   $("#response2").append(name, "<div>", "Price Level: " + pricelevel, "<div>", "Rating: " + rating, "<hr>")
+              // }
+
+            }
       })
-      //       for (var i = 0; i < 20; i++) {
-      //         var pricelevel = response.results[i].price_level
-      //         var name = response.results[i].name
-      //         var rating = response.results[i].rating
-      //         var hours = response.results[i].opening_hours.open_now
 
-      //         if ((response.results[i].price_level < 4) && (response.results[i].rating > 4)) {
-      //           // console.log(response.results[i].price_level)
-      //           // console.log(response.results[i].name)
-      //           $("#response2").append(name, "<div>", "Price Level: " + pricelevel, "<div>", "Rating: " + rating, "<hr>")
-      //         }
-
-      //       }
-      //     })
 
       //   var key = "87b65817cc4024afcebb9b66c77f4ff3"
       //   var crd = pos.coords;
