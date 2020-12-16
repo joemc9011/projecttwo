@@ -28,7 +28,7 @@
         <span class="fa fa-eye"></span> Search Players</a>
       <a href="/add" class="btn btn-danger btn-lg">
         <span class="fa fa-plus"></span> Add New Players</a>
-    
+
 
     </div>
     <div class="row">
@@ -50,9 +50,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Goran Dragic</td>
-                  <td>Miami Heat</td>
-                  <td>953</td>
+                  <td id="response2"></td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
                 </tr>
               </tbody>
             </table>
@@ -81,9 +81,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Goran Dragic</td>
-                  <td>Miami Heat</td>
-                  <td>953</td>
+                  <td class="playername">Goran Dragic</td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
                 </tr>
               </tbody>
             </table>
@@ -112,9 +112,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Goran Dragic</td>
-                  <td>Miami Heat</td>
-                  <td>953</td>
+                  <td class="playername">Goran Dragic</td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
                 </tr>
               </tbody>
             </table>
@@ -142,9 +142,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Goran Dragic</td>
-                  <td>Miami Heat</td>
-                  <td>953</td>
+                  <td class="playername">Goran Dragic</td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
                 </tr>
               </tbody>
             </table>
@@ -173,9 +173,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Goran Dragic</td>
-                  <td>Miami Heat</td>
-                  <td>953</td>
+                  <td class="playername">Goran Dragic</td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
                 </tr>
               </tbody>
             </table>
@@ -220,7 +220,31 @@
     <span class="fa fa-th-list"></span>Your NBA Fantasy Team</a>
 
   <!-- Custom Script -->
-  <script src="" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
+    
+      var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
+      // console.log(queryURL);
+      // console.log(crd);
+    $.ajax({
+        url: queryURL,
+      method: "GET"
+    })
+      .then(function (response) {
+        console.log(queryURL)
+        console.log(response)
+        for (var i = 0; i < 450; i++) {
+          var firstName = response[i].FirstName;
+          var lastName = response[i].LastName;
+          // var post = response.results[i].rating
+          // var hours = response.results[i].opening_hours.open_now
+          $("#response2").append("<td>", "FirstName: " + firstName, "<td>", "lastName: " + lastName, "<hr>")
+      }
+      });
+  </script>
+
+
+
+
 </body>
 
 </html>

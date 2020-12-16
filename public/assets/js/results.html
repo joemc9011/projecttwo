@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="Assets/results.css"> -->
+  <title> Hole in the Wall </title>
+</head>
+
+<body>
+  <p id="weather"></p>
+  <p id="response"></p>
+  <p id="response2"></p>
+  <p id="response3"></p>
+  <p id="response4"></p>
+  <p id="response5"></p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+
+    // var options = {
+    //   enableHighAccuracy: true,
+    //   timeout: 5000,
+    //   maximumAge: 0
+    // };
+
+    // function success(pos) {
+    // var crd = pos.coords;
+    // console.log(crd);
+    // console.log(pos)
+
+    var APIKey = "336e712839ff463dab532b77803a63a9";
+    // var query = "restaurants";
+    //  + "&key=" + APIKey;
+
+    var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
+    // console.log(queryURL);
+    // console.log(crd);
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    })
+      .then(function (response) {
+        console.log(queryURL)
+        console.log(response)
+        for (var i = 0; i < 450; i++) {
+              var firstName = response[i].FirstName;
+              var lastName = response[i].LastName;
+              // var post = response.results[i].rating
+              // var hours = response.results[i].opening_hours.open_now
+              $("#response2").append("<div>", "FirstName: " + firstName, "<div>", "lastName: " + lastName, "<hr>")
+
+              // if ((response.results[i].price_level < 4) && (response.results[i].rating > 4)) {
+              //   // console.log(response.results[i].price_level)
+              //   // console.log(response.results[i].name)
+              //   $("#response2").append(name, "<div>", "Price Level: " + pricelevel, "<div>", "Rating: " + rating, "<hr>")
+              // }
+
+            }
+      })
+
+
+      //   var key = "87b65817cc4024afcebb9b66c77f4ff3"
+      //   var crd = pos.coords;
+      //   var lat = crd.latitude;
+      //   var long = crd.longitude;
+      //   var queryURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=" + key;
+
+      //   $.ajax({
+      //     url: queryURL,
+      //     method: "GET"
+      //   }).then(function (response) {
+      //     var tempF = (response.main.temp - 273.15) * 1.80 + 32
+      //     var cloudy = (response.weather[0].description)
+      //     $("#weather").append("Temp: " + tempF.toFixed(0) + "F" + "<br>" + "''" + cloudy + "''" + "<hr>");
+      //     console.log(response);
+      //   });
+
+      //   console.log('Your current position is:');
+      //   console.log(`Latitude : ${crd.latitude}`);
+      //   console.log(`Longitude: ${crd.longitude}`);
+      //   console.log(`More or less ${crd.accuracy} meters.`);
+      // }
+
+      // function error(err) {
+      //   console.warn(`ERROR(${err.code}): ${err.message}`);
+      // }
+      // navigator.geolocation.getCurrentPosition(success, error, options)
+  </script>
+</body>
+
+</html>
