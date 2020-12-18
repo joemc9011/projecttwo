@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
     background-image: url(baskethoop.jpg);
+=======
+    background-image: url(basketball.jpg);
+>>>>>>> 467d5dd2657eff73b17b3c9c06fcb00ba4072532
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
