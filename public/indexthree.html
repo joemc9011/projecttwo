@@ -43,16 +43,18 @@
             <table class="table table-sm table-dark">
               <thead>
                 <tr>
-                  <th scope="col">Name</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
                   <th scope="col">Current Team</th>
-                  <th scope="col">Points Last Season</th>
+                  <th scope="col">Salary</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td id="response2"></td>
-                  <td class="playerteam">Miami Heat</td>
-                  <td class="playerpoints">953</td>
+                  <td id="pgfirstname"></td>
+                  <td id="pglastname"></td>
+                  <td id="pgteam"></td>
+                  <td id="pgsalary"></td>
                 </tr>
               </tbody>
             </table>
@@ -220,25 +222,31 @@
     <span class="fa fa-th-list"></span>Your NBA Fantasy Team</a>
 
   <!-- Custom Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
-    
-      var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
-      // console.log(queryURL);
-      // console.log(crd);
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
+    // console.log(queryURL);
+    // console.log(crd);
     $.ajax({
-        url: queryURL,
+      url: queryURL,
       method: "GET"
     })
       .then(function (response) {
         console.log(queryURL)
         console.log(response)
-        for (var i = 0; i < 450; i++) {
+        for (var i = 0; i < response.length; i++) {
           var firstName = response[i].FirstName;
           var lastName = response[i].LastName;
+          var team = response[i].Team;
+          var salary = response[i].Salary;
           // var post = response.results[i].rating
           // var hours = response.results[i].opening_hours.open_now
-          $("#response2").append("<td>", "FirstName: " + firstName, "<td>", "lastName: " + lastName, "<hr>")
-      }
+          $("#pgfirstname").append("<td>", firstName, "</td>");
+          $("#pglastname").append("<td>", lastName, "</td>");
+          $("#pgteam").append("<td>", team, "</td>");
+          $("#pgsalary").append("<td>", salary, "</td>");
+        }
       });
   </script>
 
