@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="three.css">
+  <link rel="stylesheet" href="./assets/css/three.css">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -40,7 +40,7 @@
             Point Guard:
           </div>
           <div class="card-body">
-            <table class="table table-sm table-dark">
+            <table class="table table-md table-dark">
               <thead>
                 <tr>
                   <th scope="col">Name</th>
@@ -49,6 +49,36 @@
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td id="response2"></td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
+                </tr>
+                <tr>
+                  <td id="response2"></td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
+                </tr>
+                <tr>
+                  <td id="response2"></td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
+                </tr>
+                <tr>
+                  <td id="response2"></td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
+                </tr>
+                <tr>
+                  <td id="response2"></td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
+                </tr>
+                <tr>
+                  <td id="response2"></td>
+                  <td class="playerteam">Miami Heat</td>
+                  <td class="playerpoints">953</td>
+                </tr>
                 <tr>
                   <td id="response2"></td>
                   <td class="playerteam">Miami Heat</td>
@@ -71,7 +101,7 @@
             Shooting Guard:
           </div>
           <div class="card-body">
-            <table class="table table-sm table-dark">
+            <table class="table table-md table-dark">
               <thead>
                 <tr>
                   <th scope="col">Name</th>
@@ -102,7 +132,7 @@
             Small Forward:
           </div>
           <div class="card-body">
-            <table class="table table-sm table-dark">
+            <table class="table table-md table-dark">
               <thead>
                 <tr>
                   <th scope="col">Name</th>
@@ -132,7 +162,7 @@
             Power Forward:
           </div>
           <div class="card-body">
-            <table class="table table-sm table-dark">
+            <table class="table table-md table-dark">
               <thead>
                 <tr>
                   <th scope="col">Name</th>
@@ -163,7 +193,7 @@
             Center:
           </div>
           <div class="card-body">
-            <table class="table table-sm table-dark">
+            <table class="table table-md table-dark">
               <thead>
                 <tr>
                   <th scope="col">Name</th>
@@ -221,12 +251,12 @@
 
   <!-- Custom Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
-    
-      var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
-      // console.log(queryURL);
-      // console.log(crd);
+
+    var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
+    // console.log(queryURL);
+    // console.log(crd);
     $.ajax({
-        url: queryURL,
+      url: queryURL,
       method: "GET"
     })
       .then(function (response) {
@@ -238,7 +268,7 @@
           // var post = response.results[i].rating
           // var hours = response.results[i].opening_hours.open_now
           $("#response2").append("<td>", "FirstName: " + firstName, "<td>", "lastName: " + lastName, "<hr>")
-      }
+        }
       });
   </script>
 
