@@ -1,5 +1,5 @@
 body {
-    background-image: url(baskethoop.jpg);
+    background-image: url(basketball.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,6 +19,3 @@ form {
    margin-bottom: 200px;
 }
 
-label {
-    color: white;
-}
