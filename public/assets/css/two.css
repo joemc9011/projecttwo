@@ -1,4 +1,4 @@
-/* 
+
 body {
     background-image: url(../images/basket.jpg);
     background-position: center;
@@ -7,9 +7,9 @@ body {
     background-color: black;
     position: relative;
 
-} */
+}
 
-.col {
+.row {
     text-align: center;
 }
 
