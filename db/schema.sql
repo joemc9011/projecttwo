@@ -3,9 +3,9 @@ USE nba;
 
 CREATE TABLE players (
     id INT NOT NULL AUTO_INCREMENT,
-    FirstName VARCHAR(255) NOT NULL,
-    LastName VARCHAR(255) NOT NULL,
-    activePlayer BOOLEAN,
-    PositionCategory VARCHAR(255),
+    name VARCHAR(255),
+    position VARCHAR(255),
+    team VARCHAR(255),
     PRIMARY KEY (id)
 );
+
