@@ -18,10 +18,10 @@ router.get("/players", function(req, res) {
 
 router.post("/players", function(req, res) {
   nbas.create([
-    "LastName", "starter"
+    "lastName", "starter"
     // "PlayerID"
   ], [
-    req.body.LastName, req.body.starter
+    req.body.lastName, req.body.starter
     // req.body.PlayerID
   ], function(result) {
     res.json({id: result.id})
@@ -35,7 +35,7 @@ router.put("/players/:id", function(req, res) {
   console.log("condition", condition);
 
   nbas.update({
-    player1: req.body.player1
+    starter: req.body.starter
   }, condition, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
