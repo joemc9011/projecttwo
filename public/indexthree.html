@@ -13,6 +13,7 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./assets/js/nba.js"></script>
 
 </head>
 
@@ -43,51 +44,20 @@
             <table class="table table-md table-dark">
               <thead>
                 <tr>
-                  <th scope="col">First Name</th>
-                  <th scope="col">Last Name</th>
+                  <th scope="col">Name</th>
                   <th scope="col">Position</th>
-                  <th scope="col">Current Team</th>
+                  <th scope="col">Team</th>
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id = "pgtable">
                 <tr>
                   <td id="pgfirstname"></td>
-                  <td id="pglastname"></td>
-                  <td id="pgposition"></td>
-                  <td id="pgteam"></td>
-                  <td id="pgsalary"></td>
+                  <!-- <td id="pgposition">test</td>
+                  <td id="pgteam">test</td>
+                  <td id="pgsalary">test</td> -->
                 </tr>
-                <tr>
-                  <td id="response2"></td>
-                  <td class="playerteam">Miami Heat</td>
-                  <td class="playerpoints">953</td>
-                </tr>
-                <tr>
-                  <td id="response2"></td>
-                  <td class="playerteam">Miami Heat</td>
-                  <td class="playerpoints">953</td>
-                </tr>
-                <tr>
-                  <td id="response2"></td>
-                  <td class="playerteam">Miami Heat</td>
-                  <td class="playerpoints">953</td>
-                </tr>
-                <tr>
-                  <td id="response2"></td>
-                  <td class="playerteam">Miami Heat</td>
-                  <td class="playerpoints">953</td>
-                </tr>
-                <tr>
-                  <td id="response2"></td>
-                  <td class="playerteam">Miami Heat</td>
-                  <td class="playerpoints">953</td>
-                </tr>
-                <tr>
-                  <td id="response2"></td>
-                  <td class="playerteam">Miami Heat</td>
-                  <td class="playerpoints">953</td>
-                </tr>
+            
               </tbody>
             </table>
             <div class="text-center">
@@ -108,17 +78,15 @@
             <table class="table table-md table-dark">
               <thead>
                 <tr>
-                  <th scope="col">First Name</th>
-                  <th scope="col">Last Name</th>
+                  <th scope="col">Name</th>
                   <th scope="col">Position</th>
-                  <th scope="col">Current Team</th>
+                  <th scope="col">Team</th>
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id = "sgtable">
                 <tr>
                   <td id="sgfirstname"></td>
-                  <td id="sglastname"></td>
                   <td id="sgposition"></td>
                   <td id="sgteam"></td>
                   <td id="sgsalary"></td>
@@ -143,17 +111,15 @@
             <table class="table table-md table-dark">
               <thead>
                 <tr>
-                  <th scope="col">First Name</th>
-                  <th scope="col">Last Name</th>
+                  <th scope="col">Name</th>
                   <th scope="col">Position</th>
-                  <th scope="col">Current Team</th>
+                  <th scope="col">Team</th>
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id = "sftable">
                 <tr>
                   <td id="sffirstname"></td>
-                  <td id="sflastname"></td>
                   <td id="sfposition"></td>
                   <td id="sfteam"></td>
                   <td id="sfsalary"></td>
@@ -177,17 +143,15 @@
             <table class="table table-md table-dark">
               <thead>
                 <tr>
-                  <th scope="col">First Name</th>
-                  <th scope="col">Last Name</th>
+                  <th scope="col">Name</th>
                   <th scope="col">Position</th>
-                  <th scope="col">Current Team</th>
+                  <th scope="col">Team</th>
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id = "pftable">
                 <tr>
                   <td id="pffirstname"></td>
-                  <td id="pflastname"></td>
                   <td id="pfposition"></td>
                   <td id="pfteam"></td>
                   <td id="pfsalary"></td>
@@ -212,17 +176,15 @@
             <table class="table table-md table-dark">
               <thead>
                 <tr>
-                  <th scope="col">First Name</th>
-                  <th scope="col">Last Name</th>
+                  <th scope="col">Name</th>
                   <th scope="col">Position</th>
-                  <th scope="col">Current Team</th>
+                  <th scope="col">Team</th>
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id = "ctable">
                 <tr>
                   <td id="cfirstname"></td>
-                  <td id="clastname"></td>
                   <td id="cposition"></td>
                   <td id="cteam"></td>
                   <td id="csalary"></td>
@@ -270,71 +232,9 @@
     <span class="fa fa-th-list"></span>Your NBA Fantasy Team</a>
 
   <!-- Custom Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
 
-    var queryURL = `https://api.sportsdata.io/v3/nba/scores/json/Players?key=336e712839ff463dab532b77803a63a9`
-    // console.log(queryURL);
-    // console.log(crd);
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    })
-      .then(function (response) {
-        console.log(queryURL)
-        console.log(response)
-        for (var i = 0; i < response.length; i++) {
-          var firstName = response[i].FirstName;
-          var lastName = response[i].LastName;
-
-          // var post = response.results[i].rating
-          // var hours = response.results[i].opening_hours.open_now
-          $("#response2").append("<td>", "FirstName: " + firstName, "<td>", "lastName: " + lastName, "<hr>")
-          var team = response[i].Team;
-          var salary = response[i].Salary;
-          var position = response[i].Position
-
-          if (response[i].Position == "PG" && response[i].Salary !== null) {
-            // var post = response.results[i].rating
-            // var hours = response.results[i].opening_hours.open_now
-            $("#pgfirstname").append("<td>", firstName, "</td>");
-            $("#pglastname").append("<td>", lastName, "</td>");
-            $("#pgposition").append("<td>", position, "</td>");
-            $("#pgteam").append("<td>", team, "</td>");
-            $("#pgsalary").append("<td>", salary, "</td>");
-          }
-          else if (response[i].Position == "SG" && response[i].Salary !== null) {
-            $("#sgfirstname").append("<td>", firstName, "</td>");
-            $("#sglastname").append("<td>", lastName, "</td>");
-            $("#sgposition").append("<td>", position, "</td>");
-            $("#sgteam").append("<td>", team, "</td>");
-            $("#sgsalary").append("<td>", salary, "</td>");
-          }
-          else if (response[i].Position == "SF" && response[i].Salary !== null) {
-            $("#sffirstname").append("<td>", firstName, "</td>");
-            $("#sflastname").append("<td>", lastName, "</td>");
-            $("#sfposition").append("<td>", position, "</td>");
-            $("#sfteam").append("<td>", team, "</td>");
-            $("#sfsalary").append("<td>", salary, "</td>");
-          }
-          else if (response[i].Position == "PF" && response[i].Salary !== null) {
-            $("#pffirstname").append("<td>", firstName, "</td>");
-            $("#pflastname").append("<td>", lastName, "</td>");
-            $("#pfposition").append("<td>", position, "</td>");
-            $("#pfteam").append("<td>", team, "</td>");
-            $("#pfsalary").append("<td>", salary, "</td>");
-          }
-          else if (response[i].Position == "C" && response[i].Salary !== null) {
-            $("#cfirstname").append("<td>", firstName, "</td>");
-            $("#clastname").append("<td>", lastName, "</td>");
-            $("#cposition").append("<td>", position, "</td>");
-            $("#cteam").append("<td>", team, "</td>");
-            $("#csalary").append("<td>", salary, "</td>");
-          }
-        }
-      });
-  </script>
 
 
 

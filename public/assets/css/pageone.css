@@ -3,32 +3,29 @@ body {
     background-image: url(../images/basket.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: black;
-    position: relative;
-  
+ 
 }
 
 .col {
     text-align: center;
 }
-img {
-    margin-top: 50px;
-
-}
 
 #crest {
-    height: 25%
+    height: 95%;
+    display: block;
+    margin: auto;
+    position: relative;
 }
 
 #ball {
-    height: 25%
+    height: 25%;
+    margin-top: -45%;
 }
 
 form { 
    text-align: center;
-
-  
 }
 
 label {

@@ -1,59 +1,74 @@
 body {
-    background-image: url(../images/wood.png);
-    text-align: center;
-    text-shadow: 2px 2px 5px #000000
+  background-image: url(../images/wood.png);
+  text-align: center;
+  text-shadow: 2px 2px 5px #000000
 }
 
 .jumbotron {
-    background-color: rgb(177, 177, 177);
-    color: white;
-    border-style: solid;
-    border-color:black;
-    border-width: thick;
-    background-image: url(../images/players.png);
-    background-position: center;
-    background-size: 100%;
-    box-shadow: 5px 5px 50px #0e0e0e;
+  background-color: rgb(177, 177, 177);
+  color: white;
+  border-style: solid;
+  border-color:black;
+  border-width: thick;
+  background-image: url(../images/players.png);
+  background-position: center;
+  background-size: 100%;
+  box-shadow: 5px 5px 50px #0e0e0e;
 }
 
 .card-header{
-    font-size: 30px;
-    font-weight: bold;
-    background-color: rgb(48, 172, 172);
-    color: white;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(48, 172, 172);
+  color: white;
 }
 
 .card-body {
-    background-color: rgb(53, 52, 52);
+  background-color: rgb(53, 52, 52);
+  font-size: 15px;
+  line-height: 1px;
 }
 
 h6 {
-    color: white
+  color: white
 }
 /* web code */
 
 
-.table-lg {
-  width: 400px;
-  table-layout: fixed;
-  border-collapse: collapse;
+table {
+/* width: 190%; */
+/* 140px * 5 column + 16px scrollbar width */
+
 }
-.table-md tbody {
-  display: block;
-  width: 100%;
-  overflow: auto;
-  height: 100%;
+
+tbody, thead tr { 
+/* display: block;  */
+display: inline-block ;
+
 }
-.table-md thead tr {
-  display: block;
+
+/* tbody {
+height: 200px;
+overflow-y: auto;
+overflow-x: auto;
+width: 80%;
+} */
+
+
+/* tbody td, thead th {
+width:20%;
+text-align: center;
 }
-.table-md thead {
-  background: black;
-  color: #fff;
-}
-.table-md th,
-.table-md td {
-  padding: 5px;
-  text-align: center;
-  width: 200px;
-}
+
+td {
+  margin: auto; */
+       /* line-height: 2px */
+/* }
+
+thead th:last-child { */
+/* width: 650px; 140px + 16px scrollbar width */
+/* text-align: 
+} */
+
+tr { cursor: default; }
+.highlight { background: grey; }
