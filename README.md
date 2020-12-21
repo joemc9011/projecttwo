@@ -1,4 +1,4 @@
-## NBA Fantasy Team 
+##                       *** NBA Fantasy Team ***
 This project provides a simple  and optimization Search tool for selecting your NBA fantasy team . The Search tool will allow you to enter players, and which fantasy teams they have been drafted on, followed by selecting the next best available player, depending on your team in which role to fill. It could be Point Guard, Shooting Guard, Small Forward and Power Forward. Choose Your players from Random api...
 ## Link to Repo
 Deployed: https://.herokuapp.com/ Repo: https://github.com/
