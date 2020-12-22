@@ -32,13 +32,15 @@ label {
     color: white;
 }
 
-button  {
+
+  button  {
     display:block;
-    height: 100px;
-    width: 100px;
+    background-image: url(../images/texture.jpg);
+    background-size: contain;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    background-color: orange;
     margin: auto;
     font-weight: bold;
-    
   }
+

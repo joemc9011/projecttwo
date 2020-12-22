@@ -23,10 +23,10 @@
   <div class="container">
 
     <div class="jumbotron">
-      <h1>Players List</h1>
+      <h1 id="name">Players List</h1>
       <p>Selects Your Players & Build your Team....</p>
       <hr>
- 
+
 
 
     </div>
@@ -48,7 +48,7 @@
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody id = "pgtable">
+              <tbody id="pgtable">
                 <tr>
                   <td id="pgfirstname"></td>
                 </tr>
@@ -75,7 +75,7 @@
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody id = "sgtable">
+              <tbody id="sgtable">
                 <tr>
                   <td id="sgfirstname"></td>
                   <td id="sgposition"></td>
@@ -85,7 +85,7 @@
               </tbody>
             </table>
             <div class="text-center">
-       
+
 
             </div>
           </div>
@@ -105,7 +105,7 @@
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody id = "sftable">
+              <tbody id="sftable">
                 <tr>
                   <td id="sffirstname"></td>
                   <td id="sfposition"></td>
@@ -115,7 +115,7 @@
               </tbody>
             </table>
             <div class="text-center">
-       
+
 
             </div>
           </div>
@@ -134,7 +134,7 @@
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody id = "pftable">
+              <tbody id="pftable">
                 <tr>
                   <td id="pffirstname"></td>
                   <td id="pfposition"></td>
@@ -144,7 +144,7 @@
               </tbody>
             </table>
             <div class="text-center">
-         
+
 
             </div>
           </div>
@@ -164,7 +164,7 @@
                   <th scope="col">Salary</th>
                 </tr>
               </thead>
-              <tbody id = "ctable">
+              <tbody id="ctable">
                 <tr>
                   <td id="cfirstname"></td>
                   <td id="cposition"></td>
@@ -174,7 +174,7 @@
               </tbody>
             </table>
             <div class="text-center">
-          
+
 
             </div>
           </div>
@@ -186,31 +186,31 @@
 
         <div class="card mb-4">
           <div class="card-header">
-              Player's Search Results
+            Player's Search Results
           </div>
           <div class="card-body">
-              <div class="well" id="stats">
-                  <h2 id="title"></h2>
-                  <div>
-                      <h5>Bench:</h5>
-                      <ul id="starters"></ul>
-                      <h5>Starter:</h5>
-                      <ul id="bench"></ul>
-                      <form class="create-form">
-                          <div class="form-group">
-                              <labthel for="ca">PLAYER NAME:</label>
-                              <input type="text" id="ca" name="name" />
-                              <button class="btn btn-primary btn-md" id="pg-btn">
-                                  <span class="fa fa-search"></span> Add Player</button>
-                          </div>
+            <div class="well" id="stats">
+              <h2 id="title"></h2>
+              <div>
+                <h3>Starter:</h3>
+                <ul id="bench"></ul>
+                <h3>Bench:</h3>
+                <ul id="starters"></ul>
+                <form class="create-form">
+                  <div class="form-group">
+                    <labthel for="ca">PLAYER NAME:</label>
+                      <input type="text" id="ca" name="name" />
+                      <button class="btn btn-primary btn-md" id="pg-btn">
+                        <span class="fa fa-search"></span> Add Player</button>
                   </div>
               </div>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   </div>
- 
+
 
   <!-- Custom Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
