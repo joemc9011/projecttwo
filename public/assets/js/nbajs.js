@@ -1,18 +1,21 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
-  $.ajax("/players", {
+  $.ajax("http://127.0.0.1:8080/getdata", {
     type: "GET"
   }).then(function (data) {
+    console.log(data)
     var startersEl = $("#starters");
     var benchEl = $("#bench");
+    
 
-    var players = data.players;
-    var len = players.length;
+    var players = data;
+    var length = players.length;
 
     for (var i = 0; i < players.length; i++) {
       var new_elem =
         "<li>" +
-        players[i].lastName + "   " +
+        players[i].id +
+        ". " + players[i].lastName +
         "<button class='change-roster' data-id='" +
         players[i].id +
         "' data-reserve='" +
@@ -39,7 +42,7 @@ $(function () {
       }
     }
 
-
+   
     $(document).on("click", ".change-roster", function (event) {
       var id = $(this).data("id");
       var newTeam = $(this).data("reserve") === true;
@@ -67,6 +70,7 @@ $(function () {
 
       var newPlayer = {
         lastName: $("#ca").val().trim(),
+        // devoured: $("[name=eaten]:checked").val().trim()
       };
 
       // Send the POST request.
