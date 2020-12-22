@@ -11,7 +11,7 @@ CREATE TABLE players (
 );
 
 
-CREATE TABLE todos (
+CREATE TABLE players (
 	id INT AUTO_INCREMENT NOT NULL,
 	description VARCHAR(255),
     lastName VARCHAR(255),    
