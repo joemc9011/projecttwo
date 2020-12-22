@@ -1,5 +1,5 @@
 // Import MySQL connection.
-var connection = require("./nbaConnection");
+var connection = require("./connection");
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
