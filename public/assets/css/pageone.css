@@ -20,8 +20,8 @@ body {
 }
 
 #ball {
-    height: 25%;
-    margin-top: -45%;
+    height: 150px;
+    margin-top: -800px;
 }
 
 form { 
@@ -31,3 +31,16 @@ form {
 label {
     color: white;
 }
+
+
+  button  {
+    display:block;
+    background-image: url(../images/texture.jpg);
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+    font-weight: bold;
+  }
+

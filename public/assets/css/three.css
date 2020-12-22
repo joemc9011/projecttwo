@@ -22,53 +22,77 @@ body {
   background-color: rgb(48, 172, 172);
   color: white;
 }
-
 .card-body {
   background-color: rgb(53, 52, 52);
-  font-size: 15px;
-  line-height: 1px;
+  color: white;
 }
 
+h3 {
+  color: white;
+}
 h6 {
   color: white
 }
-/* web code */
+.form-group{
+  color: white;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
 
 
 table {
-/* width: 190%; */
-/* 140px * 5 column + 16px scrollbar width */
+width: 180%;
 
 }
 
 tbody, thead tr { 
-/* display: block;  */
+ display: block; 
 display: inline-block ;
 
 }
 
-/* tbody {
+tbody {
 height: 200px;
 overflow-y: auto;
 overflow-x: auto;
 width: 80%;
-} */
+}
 
 
-/* tbody td, thead th {
-width:20%;
+ tbody td, thead th {
+width:24%;
 text-align: center;
 }
 
 td {
-  margin: auto; */
-       /* line-height: 2px */
-/* }
+  margin: auto;
+        line-height: 2px;
+ }
 
-thead th:last-child { */
-/* width: 650px; 140px + 16px scrollbar width */
-/* text-align: 
-} */
+thead th:last-child {
+  width: 650px; /*140px + 16px scrollbar width  */
+
+} 
 
 tr { cursor: default; }
 .highlight { background: grey; }
+
+.change-roster  {
+  background-image: url(../images/texture.jpg);
+  background-size: contain;
+  font-weight: bold;
+  color: white;
+}
+
+
+.delete-player {
+  background-image: url(../images/texture.jpg);
+  background-size: contain;
+  font-weight: bold;
+  color: white;
+}
+
+ul {
+  font-size: 20px;
+}
+
