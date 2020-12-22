@@ -25,15 +25,20 @@ body {
 
 .card-body {
   background-color: rgb(53, 52, 52);
-  font-size: 15px;
-  line-height: 1px;
+  /* font-size: 15px;
+  line-height: 1px; */
 }
 
+h5 {
+  color: white
+}
 h6 {
   color: white
 }
- web code */
-
+.form-group 
+{
+  color: white;
+}
 
 table {
 width: 180%;
