@@ -1,5 +1,6 @@
 ##                       *** NBA Fantasy Team ***
-This project provides a simple  and optimization Search tool for selecting your NBA fantasy team . The Search tool will allow you to enter players, and which fantasy teams they have been drafted on, followed by selecting the next best available player, depending on your team in which role to fill. It could be Point Guard, Shooting Guard, Small Forward and Power Forward. Choose Your players from Random api...
+This project provides a simple  and optimization Search tool for selecting your NBA fantasy team. The API will allow you to choose from an updated list of players separated by their positions and salaries. This will allow the users to learn how to manage players with team salary caps. 
+
 ## Link to Repo
 Deployed: https://.herokuapp.com/ Repo: https://github.com/
 
@@ -9,9 +10,12 @@ Deployed: https://.herokuapp.com/ Repo: https://github.com/
 * HTML
 * CSS
 * Node.Js/ Express
-* Passport Package (New)
+* Animate CSS
+* MYSQL
+* Heroku
 
-We planned to begin with authentication features to make sure a user can sign up. Once that is working properly, will make sure a user can view all available players in the Database but they won't be able to add the user to their team through this feature. We will then make a "Open Pack" feature will a user will essentially open a player back of cards, which they can choose 1 to add to their team. After that they will also be able to remove a player from their team.
+
+We will make sure a user can view all available players in the Database but they won't be able to add the user to their team through this feature. We will then make a "Open Pack" feature will a user will essentially open a player back of cards, which they can choose 1 to add to their team. After that they will also be able to remove a player from their team.
 
 ## Development Process
 We were able to go through things as planned, when we realized we had to implement a feature for a user to be able to update a resource. This is when we made the Add player resource in the back end and then made the functionality in the front end.
@@ -38,7 +42,5 @@ When deleting a created player it needs to be removed from the player database a
 
 
 ## User Stories
-Anyone can login the application . After login the app you will be able to Select your team name , after selecting your team name you will be able to have the playerlist of 
-PointGourd, Center , ShootingGourd and Short Forward . Yor will able to add players to your team and also delete players if the player is unavailable . You have also the 
-option of the bench to have over five players who get availble. After all You can make your own fantasy team. The Player's list is from current time of 2020 API. So anyone 
-can get the current players. So Have a Fun!
+After loading the app, you'll be able to Select your team name , after selecting your team name you will be able to have the playerlist of 
+Point Guard, Center, Shooting Guard, Forward, and Small Forward . You will able to add and delete players while categorizing them as Bench Playes or Starters. After all You can make your own fantasy team. The Player's list is from current time of 2020 API. So anyone can get the current players. So Have a Fun!
