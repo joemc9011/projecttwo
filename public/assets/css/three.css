@@ -2,7 +2,9 @@ body {
   background-image: url(../images/wood.png);
   text-align: center;
   text-shadow: 2px 2px 5px #000000
-}
+};
+
+
 
 .jumbotron {
   background-color: rgb(177, 177, 177);
@@ -24,7 +26,9 @@ body {
 }
 .card-body {
   background-color: rgb(53, 52, 52);
+  color: white;
 }
+
 h5 {
   color: white;
 }
