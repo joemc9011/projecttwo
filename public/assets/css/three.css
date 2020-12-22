@@ -22,17 +22,20 @@ body {
   background-color: rgb(48, 172, 172);
   color: white;
 }
-
 .card-body {
   background-color: rgb(53, 52, 52);
-  font-size: 15px;
-  line-height: 1px;
 }
-
+h5 {
+  color: white;
+}
 h6 {
   color: white
 }
- web code */
+.form-group{
+  color: white;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
 
 
 table {

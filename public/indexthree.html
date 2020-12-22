@@ -189,24 +189,27 @@
 
         <div class="card mb-4">
           <div class="card-header">
-            Player's Search Results
+              Player's Search Results
           </div>
           <div class="card-body">
-            <div class="well" id="stats">
-              <h2 id="title"></h2>
-              <div>
-                <h6>
-                  <strong>Players:</strong>
-                  <span id="players"></span>
-                </h6>
-                <h6>
-                  <strong>Position:</strong>
-                  <span id="position"></span>
-                </h6>
+              <div class="well" id="stats">
+                  <h2 id="title"></h2>
+                  <div>
+                      <h5>Bench:</h5>
+                      <ul id="starters"></ul>
+                      <h5>Starter:</h5>
+                      <ul id="bench"></ul>
+                      <form class="create-form">
+                          <div class="form-group">
+                              <labthel for="ca">PLAYER NAME:</label>
+                              <input type="text" id="ca" name="name" />
+                              <button class="btn btn-primary btn-md" id="pg-btn">
+                                  <span class="fa fa-search"></span> Add Player</button>
+                          </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
+      </div>
       </div>
     </div>
   </div>
